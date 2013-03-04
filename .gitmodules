@@ -1,0 +1,12 @@
+[submodule "Equalizer"]
+	path = Equalizer
+	url = https://github.com/rttag/Equalizer.git
+[submodule "Collage"]
+	path = Collage
+	url = https://github.com/rttag/Collage.git
+[submodule "Lunchbox"]
+	path = Lunchbox
+	url = https://github.com/Eyescale/Lunchbox
+[submodule "vmmlib"]
+	path = vmmlib
+	url = https://github.com/VMML/vmmlib.git
