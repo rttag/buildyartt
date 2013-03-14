@@ -6,7 +6,10 @@
 	url = https://github.com/rttag/Collage.git
 [submodule "Lunchbox"]
 	path = Lunchbox
-	url = https://github.com/Eyescale/Lunchbox
+	url = https://github.com/rttag/Lunchbox
 [submodule "vmmlib"]
 	path = vmmlib
 	url = https://github.com/VMML/vmmlib.git
+[submodule "GLStats"]
+	path = GLStats
+	url = https://github.com/Eyescale/GLStats
