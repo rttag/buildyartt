@@ -12,4 +12,4 @@
 	url = https://github.com/VMML/vmmlib.git
 [submodule "GLStats"]
 	path = GLStats
-	url = https://github.com/Eyescale/GLStats
+	url = https://github.com/rttag/GLStats
