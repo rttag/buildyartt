@@ -13,3 +13,7 @@
 [submodule "GLStats"]
 	path = GLStats
 	url = https://github.com/rttag/GLStats
+[submodule "cmake"]
+	path = cmake
+	url = git@mucdev01:cmake
+	branch = ARTIFACTORY
