@@ -17,12 +17,21 @@ set(CMAKE_CONFIGURATION_TYPES "Debug;RelWithDebInfo" CACHE PATH "configuration t
 endif()
 set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/__install" CACHE PATH "install dir" FORCE)
 
+if (MSVC)
+add_custom_target(CLEAN_VMMLIB rd /S /Q ${CMAKE_SOURCE_DIR}/vmmlib/__build )
+add_custom_target(CLEAN_LUNCHBOX rd /S /Q ${CMAKE_SOURCE_DIR}/Lunchbox/__build DEPENDS CLEAN_VMMLIB )
+add_custom_target(CLEAN_GLSTATS rd /S /Q ${CMAKE_SOURCE_DIR}/GLStats/__build DEPENDS CLEAN_LUNCHBOX )
+add_custom_target(CLEAN_COLLAGE rd /S /Q ${CMAKE_SOURCE_DIR}/Collage/__build DEPENDS CLEAN_LUNCHBOX )
+add_custom_target(CLEAN_EQUALIZER ALL rd /S /Q ${CMAKE_SOURCE_DIR}/Equalizer/__build DEPENDS CLEAN_COLLAGE CLEAN_GLSTATS )
+add_custom_target(CLEAN_TEMP_INSTALL ALL rd /S /Q ${CMAKE_CURRENT_BINARY_DIR}/__install DEPENDS CLEAN_EQUALIZER )
+else()
 add_custom_target(CLEAN_VMMLIB rm -rf ${CMAKE_SOURCE_DIR}/vmmlib/__build )
 add_custom_target(CLEAN_LUNCHBOX rm -rf ${CMAKE_SOURCE_DIR}/Lunchbox/__build DEPENDS CLEAN_VMMLIB )
 add_custom_target(CLEAN_GLSTATS rm -rf ${CMAKE_SOURCE_DIR}/GLStats/__build DEPENDS CLEAN_LUNCHBOX )
 add_custom_target(CLEAN_COLLAGE rm -rf ${CMAKE_SOURCE_DIR}/Collage/__build DEPENDS CLEAN_LUNCHBOX )
 add_custom_target(CLEAN_EQUALIZER ALL rm -rf ${CMAKE_SOURCE_DIR}/Equalizer/__build DEPENDS CLEAN_COLLAGE CLEAN_GLSTATS )
 add_custom_target(CLEAN_TEMP_INSTALL ALL rm -rf ${CMAKE_CURRENT_BINARY_DIR}/__install DEPENDS CLEAN_EQUALIZER )
+endif()
 
 ExternalProject_Add(vmmlib
 SOURCE_DIR ${CMAKE_SOURCE_DIR}/vmmlib
