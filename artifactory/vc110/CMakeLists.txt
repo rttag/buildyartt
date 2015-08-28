@@ -131,15 +131,25 @@ mark_as_advanced(EQUALIZER_LIBRARY_DEBUG
 #######################################################################################################################
 set(EQUALIZER_LOCATION
 	debug ${EQUALIZER_BINARY_BASE}/Debug/EqualizerServer.dll
-	optimized ${EQUALIZER_BINARY_BASE}/Release/EqualizerServer.dll
+	debug ${EQUALIZER_BINARY_BASE}/Debug/EqualizerServer.pdb
 	debug ${EQUALIZER_BINARY_BASE}/Debug/EqualizerAdmin.dll
-	optimized ${EQUALIZER_BINARY_BASE}/Release/EqualizerAdmin.dll
+	debug ${EQUALIZER_BINARY_BASE}/Debug/EqualizerAdmin.pdb
 	debug ${EQUALIZER_BINARY_BASE}/Debug/Equalizer.dll
-	optimized ${EQUALIZER_BINARY_BASE}/Release/Equalizer.dll
+	debug ${EQUALIZER_BINARY_BASE}/Debug/Equalizer.pdb
 	debug ${EQUALIZER_BINARY_BASE}/Debug/EqualizerFabric.dll
-	optimized ${EQUALIZER_BINARY_BASE}/Release/EqualizerFabric.dll
+	debug ${EQUALIZER_BINARY_BASE}/Debug/EqualizerFabric.pdb
 	debug ${EQUALIZER_BINARY_BASE}/Debug/pthread.dll
+	debug ${EQUALIZER_BINARY_BASE}/Debug/pthread.pdb
+	optimized ${EQUALIZER_BINARY_BASE}/Release/EqualizerServer.dll
+	optimized ${EQUALIZER_BINARY_BASE}/Release/EqualizerServer.pdb
+	optimized ${EQUALIZER_BINARY_BASE}/Release/EqualizerAdmin.dll
+	optimized ${EQUALIZER_BINARY_BASE}/Release/EqualizerAdmin.pdb
+	optimized ${EQUALIZER_BINARY_BASE}/Release/Equalizer.dll
+	optimized ${EQUALIZER_BINARY_BASE}/Release/Equalizer.pdb
+	optimized ${EQUALIZER_BINARY_BASE}/Release/EqualizerFabric.dll
+	optimized ${EQUALIZER_BINARY_BASE}/Release/EqualizerFabric.pdb
 	optimized ${EQUALIZER_BINARY_BASE}/Release/pthread.dll
+	optimized ${EQUALIZER_BINARY_BASE}/Release/pthread.pdb
 )
 
 __rtt_system_library(equalizer
