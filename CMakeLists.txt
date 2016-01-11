@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 2.8)
 find_package(PythonInterp 2.6 REQUIRED)
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
-set(ARTIFACTORY_REPOSITORY "https://artifactory.rtt.local/artifactory")
+set(ARTIFACTORY_REPOSITORY "https://art01.rtt.local/artifactory")
  
 include("rtt")
 include(ExternalProject)
