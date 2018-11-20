@@ -1,19 +1,19 @@
 [submodule "Equalizer"]
 	path = Equalizer
-	url = https://github.com/rttag/Equalizer.git
+	url = https://github.com/saundatti/Equalizer.git
 [submodule "Collage"]
 	path = Collage
-	url = https://github.com/rttag/Collage.git
+	url = https://github.com/saundatti/Collage.git
 [submodule "Lunchbox"]
 	path = Lunchbox
-	url = https://github.com/rttag/Lunchbox
+	url = https://github.com/saundatti/Lunchbox
 [submodule "vmmlib"]
 	path = vmmlib
-	url = https://github.com/VMML/vmmlib.git
+	url = https://github.com/saundatti/vmmlib.git
 [submodule "GLStats"]
 	path = GLStats
-	url = https://github.com/rttag/GLStats
+	url = https://github.com/saundatti/GLStats
 [submodule "cmake"]
 	path = cmake
-	url = ssh://git@git.rtt.local:7999/build/cmake.git
+	url = ssh://git@eu-muc-git01.ux.dsone.3ds.com:7999/build/cmake.git
 	branch = ARTIFACTORY
