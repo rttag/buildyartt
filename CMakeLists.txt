@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 2.8)
 find_package(PythonInterp 2.6 REQUIRED)
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
-set(ARTIFACTORY_REPOSITORY "https://art01.rtt.local/artifactory")
+SET(ARTIFACTORY_REPOSITORY "https://eu-muc-art01.ux.dsone.3ds.com/artifactory")
  
 include("rtt")
 include(ExternalProject)
@@ -14,6 +14,8 @@ __RTT_ARTIFACTORY_GET(boost)
 if (MSVC)
 set(OFED_SDK_DIR "D:/_SDK/OFED_SDK" CACHE PATH "Location of OFED_SDK for RDMA - optional")
 set(CMAKE_CONFIGURATION_TYPES "Debug;RelWithDebInfo" CACHE PATH "configuration types for vs" FORCE)
+add_definitions(-D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS -D_TIMESPEC_DEFINED -wd4091)
+	
 endif()
 set(CMAKE_INSTALL_PREFIX "${CMAKE_SOURCE_DIR}/__install" CACHE PATH "install dir" FORCE)
 
