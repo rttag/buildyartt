@@ -15,5 +15,5 @@
 	url = https://github.com/rttag/GLStats
 [submodule "cmake"]
 	path = cmake
-	url = ssh://git@git.rtt.local:7999/build/cmake.git
+	url = ssh://git@eu-muc-git01.ux.dsone.3ds.com:7999/build/cmake.git
 	branch = ARTIFACTORY
