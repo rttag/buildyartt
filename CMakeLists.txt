@@ -13,7 +13,7 @@ __RTT_ARTIFACTORY_GET(boost)
 
 if (MSVC)
 set(OFED_SDK_DIR "D:/_SDK/OFED_SDK" CACHE PATH "Location of OFED_SDK for RDMA - optional")
-set(CMAKE_CONFIGURATION_TYPES "Debug;RelWithDebInfo" CACHE PATH "configuration types for vs" FORCE)
+set(CMAKE_CONFIGURATION_TYPES "Debug;RelWithDebInfo;Release" CACHE PATH "configuration types for vs" FORCE)
 add_definitions(-D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS -D_TIMESPEC_DEFINED -wd4091)
 	
 endif()
