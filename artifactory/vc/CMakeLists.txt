@@ -72,7 +72,6 @@ __rtt_system_library(collage
 		boost-program_options
 		boost-math
 		boost-filesystem
-		boost-signals
 		boost-thread
 		boost-iostreams
 )
